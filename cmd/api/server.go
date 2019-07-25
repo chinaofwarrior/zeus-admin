@@ -2,10 +2,6 @@ package api
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
-	"github.com/rs/zerolog"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"io/ioutil"
 	"os"
 	"strings"
@@ -15,6 +11,11 @@ import (
 	"zeus/pkg/api/log"
 	"zeus/pkg/api/middleware"
 	"zeus/pkg/api/router"
+
+	"github.com/gin-gonic/gin"
+	"github.com/rs/zerolog"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 var (
@@ -38,7 +39,7 @@ var (
 
 func init() {
 	StartCmd.PersistentFlags().StringVarP(&config, "config", "c", "config/in-local.yaml", "Start server with provided configuration file")
-	StartCmd.PersistentFlags().StringVarP(&port, "port", "p", "80", "Tcp port server listening on")
+	StartCmd.PersistentFlags().StringVarP(&port, "port", "p", "8088", "Tcp port server listening on")
 	StartCmd.PersistentFlags().Uint8VarP(&loglevel, "loglevel", "l", 0, "Log level")
 }
 

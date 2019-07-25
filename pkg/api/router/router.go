@@ -1,13 +1,14 @@
 package router
 
 import (
+	_ "zeus/docs"
+	"zeus/pkg/api/controllers"
+	"zeus/pkg/api/middleware"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
-	_ "zeus/docs"
-	"zeus/pkg/api/controllers"
-	"zeus/pkg/api/middleware"
 )
 
 func Init(e *gin.Engine) {

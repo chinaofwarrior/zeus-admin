@@ -2,10 +2,11 @@ package cache
 
 import (
 	"fmt"
-	"github.com/go-redis/redis"
-	"github.com/spf13/viper"
 	"time"
 	"zeus/pkg/api/log"
+
+	"github.com/go-redis/redis"
+	"github.com/spf13/viper"
 )
 
 // Redis cache implement

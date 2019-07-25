@@ -2,11 +2,12 @@ package dao
 
 import (
 	"fmt"
+	"zeus/pkg/api/log"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql" // import mysql driver
 	"github.com/spf13/viper"
-	"zeus/pkg/api/log"
 )
 
 var (

@@ -1,9 +1,10 @@
 package controllers
 
 import (
+	"zeus/pkg/api/middleware"
+
 	"github.com/beego/i18n"
 	"github.com/gin-gonic/gin"
-	"zeus/pkg/api/middleware"
 )
 
 type ControllerError struct {
